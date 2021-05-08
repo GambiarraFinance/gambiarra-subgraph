@@ -1,0 +1,19 @@
+{
+  "name": "gambiarra-subgraph",
+  "version": "1.0.0",
+  "description": "GambiarraContracts Subgraph ",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ gambiarrafinance/gambiarra-subgraph",
+    "create-local": "graph create --node http://localhost:8020/ gambiarrafinance/gambiarra-subgraph",
+    "remove-local": "graph remove --node http://localhost:8020/ gambiarrafinance/gambiarra-subgraph",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 gambiarrafinance/gambiarra-subgraph"
+  },
+  "repository": "git@github.com:GambiarraFinance/gambiarra-subgraph.git",
+  "author": "@codingsh <codingsh@pm.me>",
+  "license": "MIT",
+  "dependencies": {
+    "@graphprotocol/graph-ts": "^0.20.0"
+  }
+}
